@@ -15,7 +15,7 @@ os.makedirs(text_destination_directory, exist_ok=True)
 os.makedirs(pdf_destination_directory, exist_ok=True)
 
 
-#conducting a search to isolate the identifiers of all of the Hatchets published in 1960
+#conducting a search to isolate the identifiers of all of the Hatchets published in 1964
 search = internetarchive.search_items('collection:gwulibraries AND title:Hatchet AND date:1964')
 for result in search:
    identifier = (result['identifier'])
